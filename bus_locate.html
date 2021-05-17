@@ -15,13 +15,13 @@
 				}
 			};
 			xmlHttp.open("GET", "http://openapi.tago.go.kr/openapi/service/BusLcInfoInqireService/getRouteAcctoBusLcList?ServiceKey=NJPq5bgNwTn08ylVVjGuBpmtiwARPqc%2BUR4WPrIf5advbjU9WA1RrL1SIMjKUNhRHh2fKE8QOVUpf6%2FBu9lCpA%3D%3D&cityCode=33020&routeId=CHB272000376", true);
-			xmlHttp.send();
+			xmlHttp.send(); //API URL을 https로 변경하면 저 URL이 로드가 안된다.
 		}
 
 		function findResult(xmlHttp) {
 			var xmlObj, path, result, nodeList, node;
 			xmlObj = xmlHttp.responseXML;
-			path = "//nodenm"; //동시에 경도랑 위도 띄워야함.
+			path = "//nodenm"; 
 			result = "";
 		
 			// 익스플로러를 위한 코드
