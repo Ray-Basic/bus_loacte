@@ -16,7 +16,6 @@
 			//xmlHttp.setRequestHeader("Access-Control-Allow-Origin", "*");
 			//xmlHttp.setRequestHeader("Access-Control-Allow-Headers", "*");
 			//xmlHttp.setRequestHeader("Permissions-Policy", "interest-cohort=()");
-			<? header("Content-Type: application/xml"); header("Access-Control-Allow-Origin: *”); ?>
 			xmlHttp.send(); //API URL을 https로 변경하면 저 URL이 로드가 안된다.
 		}
 
@@ -54,7 +53,9 @@
 	<h1></h1>
 	<button onclick="loadDoc()">정류장 위치 확인!</button>
 	<p id="text"></p>
-	<b> <? header("Content-Type: application/xml"); header("Access-Control-Allow-Origin: *”); ?> </b>
+	<b> <? 
+	header("Content-Type: application/xml"); 
+	header("Access-Control-Allow-Origin: *”); ?> </b>
 	
 </body>
 
