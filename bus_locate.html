@@ -16,7 +16,7 @@
 			//xmlHttp.setRequestHeader("Access-Control-Allow-Origin", "*");
 			//xmlHttp.setRequestHeader("Access-Control-Allow-Headers", "*");
 			//xmlHttp.setRequestHeader("Permissions-Policy", "interest-cohort=()");
-			xmlHttp.send(); //API URL을 https로 변경하면 저 URL이 로드가 안된다.
+			xmlHttp.send(); 
 		}
 
 		function findResult(xmlHttp) {
@@ -51,7 +51,7 @@
 <body>
 
 	<h1></h1>
-	<button onclick="loadDoc()">정류장 위치 확인!</button>
+	<button style= "padding: .5rem 1rem; font-size: 20px; line-height: 1.5; border:none; border-radius: .3rem; background-color: #007bff; color: white" onclick="loadDoc()">999번</button>
 	<p id="text"></p>
 	<b> <? 
 	header("Content-Type: application/xml"); 
